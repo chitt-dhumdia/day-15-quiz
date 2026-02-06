@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Modern Quiz UI</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+
+<div class="container-fluid mt-4">
+<div class="row">
+
+<!-- LEFT -->
+<div class="col-md-3">
+<div class="panel">
+<h5>Questions List</h5>
+<div class="question-list">
+<ul class="list-unstyled"></ul>
+</div>
+</div>
+</div>
+
+<!-- CENTER -->
+<div class="col-md-6 d-flex justify-content-center align-items-center">
+<div class="quiz-card w-100">
+
+<div class="quiz-heading text-center">Question</div>
+<div id="timer" class="text-center fw-bold mt-2">
+00:00
+</div>
+
+
+<h4 id="quiz-que-show"></h4>
+
+<ul class="list-unstyled mt-4"></ul>
+
+<div class="nav-buttons d-flex justify-content-between">
+<button class="btn btn-secondary" id="prev">Prev</button>
+<button class="btn btn-primary" id="next">Next</button>
+</div>
+
+</div>
+</div>
+
+<!-- RIGHT -->
+<div class="col-md-3">
+<div class="panel text-center">
+
+<h5>Question Numbers</h5>
+
+<div class="number-circle"></div>
+
+<button id="quiz-submit" class="btn btn-warning mt-3 w-100">
+Submit Quiz
+</button>
+
+<!-- RESULT MODAL -->
+<div class="result-overlay" id="resultOverlay">
+
+  <div class="result-box">
+
+      <h2>Your Score</h2>
+
+      <h1 id="finalScore">0</h1>
+
+      <button class="btn btn-primary mt-3" id="closeResult">
+        Close Quiz
+      </button>
+
+  </div>
+
+</div>
+
+
+
+</div>
+</div>
+
+</div>
+</div>
+
+<script src="./js/script.js"></script>
+
+</body>
+</html>
